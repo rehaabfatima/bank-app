@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="credit.css">
+        <title>Account holder's Details</title>
+    </head>
+    <body>
+        <h1>Here's the account details for your account. </h1>
+        <p id="put"><b>Your's credit is PKR:<p id="input">200000</p></b></p>
+
+        <h2>MAKE TRANSACTION:</h2>
+        <p>Enter Transaction amount:<input type="number" id="number"></p>
+        <p id="input"></p>
+        <button onclick="getInputValue()">Make Transaction</button>
+       
+        <script>
+            function getInputValue(){
+                 let paraValue = parseFloat(document.getElementById("input").textContent);
+
+                // Get the value from the <input> tag
+                let inputValue = parseFloat(document.getElementById("number").value);
+
+                // Check if either value is NaN
+                if (isNaN(paraValue) || isNaN(inputValue)) {
+                    document.getElementById("output").innerHTML = "Invalid input. Please enter valid numbers.";
+                } else {
+                    // Perform the subtraction
+                    let result = paraValue - inputValue;
+
+                    // Display the result
+                    document.getElementById("input").innerHTML = result;
+                }
+            }
+        </script>
+        
+    </body>
+</html>

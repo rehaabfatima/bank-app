@@ -1,0 +1,23 @@
+body{
+    background-image:url("1600w-F2CyNS5sQdM.png") ;
+}
+.container{
+    height: 270px;
+    width: 400px;
+    background-color: white;
+    margin-left: 350px;
+    margin-top: 150px;
+}
+h1{
+    padding-left: 5px;
+    text-align: center;
+}
+.k{
+    text-align: center;
+}
+button{
+    text-decoration-line: none;
+    margin-top: 20px;
+    margin-left:300px;
+
+}
